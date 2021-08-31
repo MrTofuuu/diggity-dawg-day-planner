@@ -1,1 +1,1 @@
-# diggity--dawg-day-planner
+# diggity-dawg-day-planner
