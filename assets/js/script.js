@@ -19,13 +19,17 @@ function hourCheck() {
         var hourBlock = parseInt($(this).attr("id"));
         //case statements to check current hours, will apply past, present, future classes 
         if (hourNow > hourBlock) {
-            $(this).addClass("future");
-        } else if (hourNow === hourBlock) {
-            $(this).addClass("present");
-        } else {
-            $(this).addClass("past");
+            $(this).toggleClass("past");
+        } //else 
+        if (hourNow === hourBlock) {
+            $(this).toggleClass("present");
+        } //else
+        if (hourNow < hourBlock) {
+            $(this).toggleClass("future");
         }
     })
+    console.log("hourNow is " + hourNow);
+
 }
 
 $(document).ready(function() {
