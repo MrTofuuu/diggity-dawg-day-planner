@@ -23,8 +23,8 @@ Created a Javascript day planner that will change the color of the time block ac
 
 ## Screenshots
 
-![Password Generator Home](./assets/home.png)
-![Password Generator Generated](./assets/generated.png)
+![day planner](./assets/diggity-dawg.gif)
+
 
 ### **Links**
 
@@ -44,6 +44,7 @@ Chris Stallcup
 * [https://getbootstrap.com/docs/4.0/layout/grid/](https://getbootstrap.com/docs/4.0/layout/grid/)
 * [https://momentjs.com/](https://momentjs.com/)
 * [https://www.w3schools.com/howto/howto_js_toggle_class.asp](https://www.w3schools.com/howto/howto_js_toggle_class.asp)
+* [https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-save](https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-save)
 
 ## Badges
 
