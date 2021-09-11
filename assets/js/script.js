@@ -21,7 +21,7 @@ function hourCheck() {
         if (hourNow > hourBlock) {
             $(this).toggleClass("past");
         } //else 
-        if (hourNow === hourBlock) {
+        if (hourNow == hourBlock) {
             $(this).toggleClass("present");
         } //else
         if (hourNow < hourBlock) {
@@ -31,6 +31,7 @@ function hourCheck() {
     console.log("hourNow is " + hourNow);
 
 }
+//function to pull data
 
 $(document).ready(function() {
     // event listener for saveBtn 
@@ -43,6 +44,15 @@ $(document).ready(function() {
     })
     hourCheck();
 
+    // function getData() {
+    //     //starting index at 9 and ending for loop at 17 to match time blocks
+    //     for (var i = 9; i < 18; i++) {
+    //         if (localStorage.getItem("text" + i)) {
+    //             $("text" + i).val(localStorage.getItem("text" + i));
+    //         }
+    //     }
+    // }
+    // getData();
     // There has to be a more efficient way than doing it this way 
     $("#9 .description").val(localStorage.getItem("9"));
     $("#10 .description").val(localStorage.getItem("10"));
@@ -54,7 +64,3 @@ $(document).ready(function() {
     $("#16 .description").val(localStorage.getItem("16"));
     $("#17 .description").val(localStorage.getItem("17"));
 })
-
-function saveText() {
-
-}
